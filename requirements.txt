@@ -1,5 +1,11 @@
+# SNEHA - private, reasoning, web-capable AI companion
+# Tested on Python 3.9 (Apple Silicon / arm64).
+# llama-cpp-python must be built with Metal support for usable speed on Apple GPUs
+# (the prebuilt arm64 wheels include it).
+
 streamlit==1.44.1
-llama-index==0.12.31
-llama-cpp-python==0.3.8
-sentence-transformers==4.1.0
-python-dotenv==1.1.0
+llama-cpp-python==0.3.8       # local GGUF inference (Mistral-7B-Instruct v0.3)
+sentence-transformers==4.1.0  # embeddings for optional document RAG over data/
+numpy==2.0.2
+requests==2.32.3              # hybrid web search (DuckDuckGo)
+Authlib>=1.3.2               # optional Google/Microsoft sign-in (Streamlit native auth)

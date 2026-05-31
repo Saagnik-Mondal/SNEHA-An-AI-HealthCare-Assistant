@@ -77,4 +77,12 @@ pythonenv*/
 tmp/
 .sass-cache/
 
+# SNEHA: saved user conversations and login secrets (never commit these)
+chats/
+.streamlit/secrets.toml
+
 venv/
+openwebui_venv/
+data/
+ollama/
+.webui_secret_key
