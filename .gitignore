@@ -83,6 +83,30 @@ chats/
 
 venv/
 openwebui_venv/
+
+# Application Data & Local DBs
 data/
 ollama/
+chats/
+
+# Secrets & API Keys
 .webui_secret_key
+.streamlit/secrets.toml
+*.key
+*.pem
+*.cert
+*.crt
+credentials.json
+client_secret.json
+*secret*.json
+*secret*.txt
+.env
+.env.*
+*.env
+
+# Large Model Files
+models/
+*.gguf
+*.bin
+*.pt
+*.safetensors
